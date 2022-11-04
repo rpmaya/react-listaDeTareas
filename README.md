@@ -2,13 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup with example "Todos"
+## Setup with example "Todos"  (components, props, state, events)
 
-- Download node (include npm): https://nodejs.org/en/download/
+- Instalar plugin de react para Chrome (React Developer Tools)
+
+- Descargar nodejs (incluye npm): https://nodejs.org/en/download/ para create-react-app
 
 - Crear proyecto en GitHub y clonar en local
 
-- 
+- Inicializar en TERMINAL de VS Code
+  
 ```shell
 cd listaDeTareas
 
@@ -16,9 +19,36 @@ node —version (18.12)
 npm —version.  (8.19.2)
 
 npx create-react-app .
-#Si falla: npx clear-npx-cache
+#Si falla: npx clear-npx-cache y relanzar npx create-react-app .
+npm start
+
 ```
 
+- Revisar index.html: lo más importante <div id="root"></div>, aquí insertaremos todo el código html generado con React.
+- Revisar la carpeta src/
+  - En src/ podemos eliminar los archivos excepto index.js
+- Revisar package.json (ver los paquetes pre-instalados ya por React)
+- React nos sirve para programar en JSX, lenguaje muy similar a HTML.
+
+- Se ha visto en esta Single Page Application los siguientes fundamentos básicos que es la base de todo:
+  - Propiedades
+  - Eventos
+  - Hooks (useState, useRef y useEffect)
+  - Local storage para añadir persistencia
+  - Flujo de comunicación entre componentes: Props de arriba a abajo, y Eventos se disparan o fluyen de abajo a arriba.
+
+### App.js o App.jsx
+- Se puede renombrar como App.jsx (opcional para indicar que es un componente de React)
+
+### Crear directorio components y dentro creamos los componentes
+- TodoList.jsx
+- TodoItem.jsx
+
+- Instalar plugin de VS Code: ES7 React/Redux/... y al escribir rfc y pulsar <intro> nos crea la estructura.
+
+- Instalar plugin de VS COde: Emoji snippets y copiar desde [aquí](https://emojipedia.org/symbols/) y pegar en el código.
+
+- Id automatizado:  `npm i uuid`  (después volvemos a lanzar la Web con `npm start`)
 
 ## Available Scripts
 
