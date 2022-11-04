@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup with example "Todos"
+
+- Download node (include npm): https://nodejs.org/en/download/
+
+- Crear proyecto en GitHub y clonar en local
+
+- 
+```shell
+cd listaDeTareas
+
+node —version (18.12)
+npm —version.  (8.19.2)
+
+npx create-react-app .
+#Si falla: npx clear-npx-cache
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
