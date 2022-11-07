@@ -9,7 +9,7 @@ import TodoItem from './TodoItem';
 export default function TodoList({ todos, toggleTodo }) {
   //2 Devolver una lista con <ul>, de momento  solo com <li>Tarea</li> dentro del todos.map 
   //3 pasamos a TodoItem cada elemento del map  <TodoItem todo={todo}/>
-  //4 cuando renderizamos listas, react le gustaría tener un id único por elemento, por lo que le añadimos el campo "key={todo.id}"
+  //5 cuando renderizamos listas, react le gustaría tener un id único por elemento, por lo que le añadimos el campo "key={todo.id}"
   //6 Le pasamos a TodoItem el toggleTodo
   return (
     <ul>

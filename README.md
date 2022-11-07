@@ -10,8 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Crear proyecto en GitHub y clonar en local
 
-- Inicializar en TERMINAL de VS Code
-  
+- Inicializar en TERMINAL de VS Code:
 ```shell
 cd listaDeTareas
 

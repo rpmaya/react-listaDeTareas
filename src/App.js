@@ -1,4 +1,5 @@
 //1.- import React from 'react' para utilizar JSX
+//11 y /12. y /13a- Continuamos por TodoItem.jsx
 //6.- import el hook "useState" para que el componente tenga estado: cada vez que cambia el estado se renderiza el componente
 //7b.- import del element Fragment
 //10b- import del hook useRef
@@ -70,7 +71,7 @@ function App() {
   }
 
   return (
-    /* 3.- Probar con hola mundo
+    /* /3.- Probar con hola mundo
     <div className="App">
       <header className="App-header">
         <h1>Hello World!!!</h1>
@@ -79,16 +80,16 @@ function App() {
     </div>
     */
 
-   /* 5.- Devolvemos <TodoList todos={[]}}/> pasándole la prop "todos" inicialmente como un array vacío, o un [{id:1, task:"tarea1", completeted: false}],
+   /* /5.- Devolvemos <TodoList todos={[]}}/> pasándole la prop "todos" inicialmente como un array vacío, o un [{id:1, task:"tarea1", completeted: false}],
    pero es preferible setearlo como variable de estado
    */
-  /* 6.- Creamos otro elemento input de tipo test para introducir nuevas tareas */
-  /* 7.- Lo metemeos en un Fragment, antes se hacía en un Div pero por renderización es mejor con Fragment (se requiere un solo elemento en React) */
-  /* 8 .- Añadir y quitar tareas de la lista, usando emoji (ver readme) */
-  /* 9.- A los botones le añadimos eventos con función: onClick={handleTodoAdd} y onClick={handleClearAll} */
-  /* 10a- Para leer el input creamos la referencia ref={todoTaskRef} */
-  /* 13b- A TodoList le pasamos el "toggleTodo={toggleTodo}" */
-  /* 14- Para ver que hacemos el toggle correctamente vamos a añadir al final un div con las X tareas por terminar, donde X lo sustituimos por
+  /* /6.- Creamos otro elemento input de tipo test para introducir nuevas tareas */
+  /* /7.- Lo metemeos en un Fragment, antes se hacía en un Div pero por renderización es mejor con Fragment (se requiere un solo elemento en React) */
+  /* /8 .- Añadir y quitar tareas de la lista, usando emoji (ver readme) */
+  /* /9.- A los botones le añadimos eventos con función: onClick={handleTodoAdd} y onClick={handleClearAll} */
+  /* /10a- Para leer el input creamos la referencia ref={todoTaskRef} */
+  /* /13b- A TodoList le pasamos el "toggleTodo={toggleTodo}" */
+  /* /14- Para ver que hacemos el toggle correctamente vamos a añadir al final un div con las X tareas por terminar, donde X lo sustituimos por
   código javascript con {} */
    <Fragment>
       <TodoList todos={todos} toggleTodo={toggleTodo}/>
