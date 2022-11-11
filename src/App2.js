@@ -1,5 +1,6 @@
 import './App.css';
-import React, { useRef, useState, Fragment } from 'react';
+import React, { useRef, useState, Fragment, useDebugValue } from 'react';
+import axios from 'axios'; //npm i axios
 import ToDoList from './Component/ToDoList';
 import {v4} from 'uuid';
 
@@ -27,13 +28,13 @@ function App2() {
 
  
   //Implementaremos después el campo "completed": true | false
-  const handleClear = ()=>{
+  const handleClear = () => {
     const nuevoElemento = listaElementos.filter((elemento)=>!elemento.completed);
     setListaElementos(nuevoElemento);
   };
 
   //Asignamos a la constante "elemento" el valor capturado en listaRef (input del usuario)
-  const handleAddList = ()=>{
+  const handleAddList = () => {
     const elemento = listaRef.current.value;
     if(elemento !== ""){
       //Si el texto introducido por el usuario no es vacío, añadimos a la lista actual "...listaActual", la nueva tarea introducida en la variable elemento.
@@ -47,10 +48,31 @@ function App2() {
     // 2.2.- Vemos un warning con: "Each child in a list should have a unique "key" prop (cuando recorremos ToDoList)
   };
 
+  //*Nueva3a.- Descargar TODOs con Axios de un API externo
+  const descargarTodos = () => {
+    axios({
+      method: 'get',
+      url: 'https://jsonplaceholder.typicode.com/todos',
+      //data: {c1:'c1', c2:'c2'} si method: 'post' 
+    }).then(function (response) {    
+        //console.log(response);
+        copiarTodos(response.data);
+    })
+  } 
+
+  //*Nueva3b- Copiar en el estado de ListaElementos
+  const copiarTodos = (tareas) => {
+    const misTareas = tareas.map(function (tarea) {
+      return {id:tarea.id, tarea:tarea.title, completed:tarea.completed};
+    })
+    setListaElementos(misTareas);
+  }
+
   /* Nueva3: Para ver que hacemos el toggle correctamente vamos a añadir al final un div con las X tareas por terminar, donde X lo sustituimos por
   código javascript con {} */
   return (
     <Fragment>
+      <button onClick={descargarTodos}>Inicializar</button>
       <ToDoList elementos = {listaElementos} toggleElemento = {toggleElemento}/>
       <input ref={listaRef} type="text" placeholder="Introduce tu tarea: "/>
       <button onClick={handleAddList}>➕</button>
