@@ -52,7 +52,8 @@ function App2() {
   const descargarTodos = () => {
     axios({
       method: 'get',
-      url: 'https://jsonplaceholder.typicode.com/todos',
+      //url: 'https://jsonplaceholder.typicode.com/todos',
+      url: 'data/todos.json',
       //data: {c1:'c1', c2:'c2'} si method: 'post' 
     }).then(function (response) {    
         //console.log(response);
