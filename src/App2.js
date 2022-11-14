@@ -48,12 +48,12 @@ function App2() {
     // 2.2.- Vemos un warning con: "Each child in a list should have a unique "key" prop (cuando recorremos ToDoList)
   };
 
-  //*Nueva3a.- Descargar TODOs con Axios de un API externo
+  //*Nueva4.- Descargar TODOs con Axios de un API externo. npm i axios. Button 
   const descargarTodos = () => {
     axios({
       method: 'get',
       //url: 'https://jsonplaceholder.typicode.com/todos',
-      url: 'data/todos.json',
+      url: 'http://localhost:3000/data/todos.json',
       //data: {c1:'c1', c2:'c2'} si method: 'post' 
     }).then(function (response) {    
         //console.log(response);

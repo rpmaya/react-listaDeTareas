@@ -3,10 +3,11 @@
 { "id":2,"title":"Props","completed":true },
 { "id":3,"title":"State (input con State)","completed":true },
 { "id":4,"title":"Axios","completed":false},
-{ "id":5,"title":"Cargar y guardar datos (en cache del navegador)","completed":false},
-{ "id":6,"title":"Cargar ficheros (y usar react-csv-to-table)","completed":false},
-{ "id":7,"title":"Formularios","completed":false},
-{ "id":8,"title":"Material UI","completed":false},
-{ "id":9,"title":"Router","completed":false},
-{ "id":10,"title":"Ejercicios (bootstrap y react)","completed":false}
+{ "id":5,"title":"Ejercicio tabla bootstrap con React","completed":false},
+{ "id":6,"title":"Cargar y guardar datos (en cache del navegador)","completed":false},
+{ "id":7,"title":"Cargar ficheros (y usar react-csv-to-table)","completed":false},
+{ "id":8,"title":"Formularios","completed":false},
+{ "id":9,"title":"Material UI","completed":false},
+{ "id":10,"title":"Router","completed":false},
+{ "id":11,"title":"Ejercicios (bootstrap y react)","completed":false}
 ]
