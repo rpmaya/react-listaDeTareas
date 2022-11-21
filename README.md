@@ -49,6 +49,9 @@ npm start
 
 - Id automatizado:  `npm i uuid`  (después volvemos a lanzar la Web con `npm start`)
 
+### Routing
+npm i react-router-dom
+
 ## Available Scripts
 
 In the project directory, you can run:

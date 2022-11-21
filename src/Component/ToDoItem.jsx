@@ -11,9 +11,8 @@ export default function ToDoItem({ elemento, toggleElemento }) {
   }
   //1 Creamos un checkbox
   return (
-    <li>
-        <input type="checkbox" checked={completed} onChange={handleTodoClick}/>
-        {tarea}
+    <li className="list-group-item">
+        <input className="form-check-input me-1" type="checkbox" checked={completed} onChange={handleTodoClick}/> {tarea}
     </li>
   )
 }

@@ -18,7 +18,7 @@ export default function ToDoList({ elementos, toggleElemento }) {
   */
  //1 Creamos un subcomponente ToDoItem para trabajar con él.
   return (
-    <ul>
+    <ul className="list-group">
         {elementos.map((elemento)=> (
             <ToDoItem key={elemento.id} elemento={elemento} toggleElemento={toggleElemento}/>
         ))}
